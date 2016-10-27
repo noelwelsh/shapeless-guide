@@ -67,7 +67,7 @@ However, calls to `writeCsv` fail to compile:
 
 ```tut:book:fail
 implicitly[CsvEncoder[Tree[Int]]]
-````
+```
 
 The problem is that our type is recursive.
 The compiler senses an infinite loop
@@ -108,7 +108,7 @@ The result is failure to find a suitable implicit.
 In fact, the situation is worse than this.
 If the compiler sees the same type constructor twice
 and the complexity of the type parameters is *increasing*,
-it assumes that branch of search is "diverging".
+it assumes that branch of the search is "diverging".
 This is a problem for shapeless
 because types like `::[H, T]` and `:+:[H, T]`
 come up in different generic representations

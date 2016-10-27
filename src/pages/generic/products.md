@@ -299,10 +299,10 @@ It has no idea which combination came closest to the desired result,
 so it can't tell us where the source(s) of failure lie.
 
 There's not much good news here.
-We have find the source of the error ourselves
+We have to find the source of the error ourselves
 by a process of elimination.
 We'll discuss debugging techniques
-in more detail next chapter.
+in more detail in the next chapter.
 For now, the main redeeming feature
 is that implicit resolution always fails at compile time.
 There's little chance that we will end up
