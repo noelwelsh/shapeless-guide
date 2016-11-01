@@ -148,7 +148,7 @@ and `T` for the value at the tail.
 We use `FieldType` and `:+:` in the result type
 to declare the relationships between the three,
 and we use a `Witness` to access the runtime value of the type name.
-The result is an object containing a single key/value pair:
+The result is an object containing a single key/value pair,
 the key being the type name and the value the result:
 
 ```tut:book:silent
