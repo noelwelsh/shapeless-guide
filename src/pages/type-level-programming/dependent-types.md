@@ -47,11 +47,11 @@ getRepr(Vec(1, 2))
 getRepr(Rect(Vec(0, 0), Vec(5, 5)))
 ```
 
-What we're seeing here *dependent typing*:
+What we're seeing here is called *dependent typing*:
 the return type of `getRepr` is dependent
 on types defined in its value parameters.
 Suppose we had specified `Repr` 
-as type parameter on `Generic`
+as a type parameter on `Generic`
 instead of a type member:
 
 ```tut:book:silent
