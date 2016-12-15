@@ -1,8 +1,14 @@
 ---
-papersize: "a5paper"
+documentclass: "book"
 fontsize: "11pt"
-geometry: "margin=.75in"
-# blackandwhiteprintable: true
+blackandwhiteprintable: true
+geometry:
+  - "top=.75in"
+  - "bottom=.75in"
+  - "left=.75in"
+  - "right=.75in"
+  - "paperwidth=6in"
+  - "paperheight=9in"
 solutions:
   headingText: "Solutions to Exercises"
 "links-as-notes": true
