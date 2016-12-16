@@ -330,6 +330,18 @@ $endif$
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 
+% Command to create blank page ------------------
+% Required by Lulu
+% Taken from http://tex.stackexchange.com/questions/36880/insert-a-blank-page-after-current-page
+
+\usepackage{afterpage}
+
+\newcommand\blankpage{%
+    \null
+    \thispagestyle{empty}%
+    \addtocounter{page}{-1}%
+    \newpage}
+
 % ===============================================
 % Document
 % ===============================================
@@ -403,6 +415,8 @@ ISBN 978-1-365-61352-4
 
 Published by Underscore Consulting LLP, Brighton, UK.
 
+\texttt{www.underscore.io}
+
 \end{center}
 
 \vspace{1em}
@@ -430,5 +444,9 @@ $endfor$
 $body$
 
 % The end ---------------------------------------
+
+% Blank page as required by Lulu ----------------
+
+\afterpage{\blankpage}
 
 \end{document}

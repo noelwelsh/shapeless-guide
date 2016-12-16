@@ -3,12 +3,12 @@ documentclass: "book"
 fontsize: "11pt"
 blackandwhiteprintable: true
 geometry:
+  - "a5paper"
   - "top=.75in"
   - "bottom=.75in"
-  - "left=.75in"
+  - "left=.5in"
   - "right=.75in"
-  - "paperwidth=6in"
-  - "paperheight=9in"
+  - "bindingoffset=0.35in"
 solutions:
   headingText: "Solutions to Exercises"
 "links-as-notes": true
